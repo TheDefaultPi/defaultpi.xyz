@@ -12,6 +12,7 @@ function App() {
         <div className="flex flex-col items-center justify-center gap-8">
 
           
+          {/* Main Content */}
           <HoverCard>
             <h1 className="text-5xl md:text-7xl font-bold mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-yellow-300 to-blue-400 animate-gradient-x">
               DefaultPi
@@ -21,15 +22,18 @@ function App() {
               My passion for innovation and creativity drives everything I do.
             </p>
             
+            {/* Social Links */}
             <SocialLinks />
           </HoverCard>
         </div>
       </div>
       
+      {/* Animated Decorative Elements */}
       <div className="absolute bottom-10 right-10 w-20 h-20 bg-blue-500/20 rounded-full animate-pulse"></div>
       <div className="absolute top-20 left-10 w-16 h-16 bg-yellow-400/20 rounded-full animate-bounce delay-700"></div>
       <div className="absolute bottom-40 left-20 w-12 h-12 bg-gray-400/20 rounded-full animate-ping"></div>
       
+      {/* Ukrainian Flag Section - Moved to bottom */}
       <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-10">
         <div className="flex flex-col mb-2">
           <div className="h-4 w-20 bg-blue-500 rounded-t-md"></div>
