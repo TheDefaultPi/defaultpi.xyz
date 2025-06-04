@@ -1,0 +1,15 @@
+{
+  "description": " - This is a template for general web app, game, common application,client,tool,component development.
+  "required_fields": [],
+  "required_files": [
+    "index.html",
+    "src/main.jsx",
+    "src/App.jsx",
+    "src/index.css",
+    "vite.config.js"
+  ],
+  "lang": "JavaScript",
+  "framework": "React",
+  "style": "react_template",
+  "scene": "default_web_project"
+}
