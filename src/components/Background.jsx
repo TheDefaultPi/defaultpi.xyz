@@ -24,7 +24,7 @@ const Background = ({ width, height }) => {
     const particlesArray = [];
     
     for (let i = 0; i < particleCount; i++) {
-      const size = Math.random() * 1.5 + 0.5; // Smaller dots (0.5-2)
+      const size = Math.random() * 1.5 + 0.5; 
       const x = Math.random() * width;
       const y = Math.random() * height;
       const directionX = (Math.random() - 0.5) * particleBaseSpeed;
@@ -47,7 +47,7 @@ const Background = ({ width, height }) => {
     }
     
     const isLineAffectedByMouse = (p1, p2) => {
-      const maxCheckDistance = connectionDistance * 1.2; // Increased checking distance
+      const maxCheckDistance = connectionDistance * 1.2;
       
       const d1 = Math.hypot(mousePosition.x - p1.x, mousePosition.y - p1.y);
       const d2 = Math.hypot(mousePosition.x - p2.x, mousePosition.y - p2.y);
@@ -155,7 +155,7 @@ const Background = ({ width, height }) => {
         const p = particlesArray[i];
         
         ctx.beginPath();
-        const size = p.pushed ? p.size * (1.2 + Math.min(mouseSpeed * 0.01, 0.8)) : p.size; // Increase size when pushed
+        const size = p.pushed ? p.size * (1.2 + Math.min(mouseSpeed * 0.01, 0.8)) : p.size;
         ctx.arc(p.x, p.y, size, 0, Math.PI * 2);
         ctx.fillStyle = p.pushed ? '#eab308' : p.color; 
         ctx.fill();
