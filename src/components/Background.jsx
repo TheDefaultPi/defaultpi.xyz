@@ -15,11 +15,11 @@ const Background = ({ width, height }) => {
     
     const colors = ['#444', '#777', '#aaa', '#3b82f6', '#eab308'];
     const particleCount = Math.min(Math.floor(width * height / 15000), 150);
-    const connectionDistance = 120; // Maximum distance to connect dots
-    const mouseRadius = 150; // Mouse interaction radius - increased for more effect
-    const pushForce = 2.5; // How strongly mouse pushes particles away - increased
-    const particleBaseSpeed = 0.3; // Base movement speed
-    const knockBackForce = 1.8; // Force applied when mouse moves quickly
+    const connectionDistance = 120; 
+    const mouseRadius = 150;
+    const pushForce = 2.5;
+    const particleBaseSpeed = 0.3; 
+    const knockBackForce = 1.8; 
     
     const particlesArray = [];
     
