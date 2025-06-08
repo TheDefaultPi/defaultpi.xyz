@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: #111827; /* bg-gray-900 */
+  overflow-x: hidden;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  transition: all 0.3s;
+  background-color: rgba(106, 115, 125, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(106, 115, 125, 0.27);
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* Container layout */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Background canvas */
+.background-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111827; /* bg-gray-900 */
+}
+
+/* Content layout */
+.content-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main-content {
+  container-type: inline-size;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title */
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #eab308; /* text-yellow-400 */
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+.donate-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+}
+
+.donate-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #3b82f6; /* bg-blue-500 */
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.donate-link:hover {
+  background-color: #2563eb; /* bg-blue-600 */
+  transform: scale(1.05);
+}
+
+.donate-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Social Links */
+.social-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 64rem;
+}
+
+.social-links-wrapper {
+  width: 100%;
+  background-color: rgba(31, 41, 55, 0.7); /* bg-gray-800 bg-opacity-70 */
+  backdrop-filter: blur(4px);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.social-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .social-links-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.social-icon-container {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #374151; /* bg-gray-700 */
+  border-radius: 9999px;
+  color: #60a5fa; /* text-blue-400 */
+  transition: color 0.3s ease;
+}
+
+.social-link:hover .social-icon-container {
+  color: #eab308; /* text-yellow-400 */
+}
+
+.social-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.social-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.social-link-text {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 1.5rem 0;
+  margin-top: auto;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  margin-right: 0.5rem;
+}
+
+.ukraine-flag {
+  width: 1.5rem;
+  height: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ukraine-blue {
+  height: 50%;
+  background-color: #3b82f6; /* bg-blue-500 */
+}
+
+.ukraine-yellow {
+  height: 50%;
+  background-color: #eab308; /* bg-yellow-400 */
+}
+
+.copyright {
+  color: #9ca3af; /* text-gray-400 */
+  font-size: 0.875rem;
+}
