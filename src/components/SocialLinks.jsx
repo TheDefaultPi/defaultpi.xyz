@@ -31,6 +31,16 @@ const SocialLinks = () => {
     },
     {
       name: 'NameMC',
+      url: 'https://namemc.com/profile/shylr',
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4 2h2v2h2V2h2v2h2V2h2v2h2V2h2v2h2v2h-2v2h2v2h-2v2h2v2h-2v2h2v2h-2v2h2v2h-2v-2h-2v2h-2v-2h-2v2h-2v-2H8v2H6v-2H4v2H2v-2h2v-2H2v-2h2v-2H2v-2h2v-2H2v-2h2V6H2V4h2V2zm2 4v2h2V6H6zm2 2v2h2V8H8zm2-2v2h2V6h-2zm2 2v2h2V8h-2zm2-2v2h2V6h-2zm2 2v2h2V8h-2zM4 8v2h2V8H4zm0 4v2h2v-2H4zm2 2v2h2v-2H6zm2 2v2h2v-2H8zm2 2v2h2v-2h-2zm2 0h2v-2h-2v2zm2-2h2v-2h-2v2zm2-2h2v-2h-2v2zm-6-2v2h2v-2h-2zm-2 0v2h2v-2H8zm-2-2v2h2v-2H6zm12 0v2h2v-2h-2z" />
+        </svg>
+      ),
+    }
+  ];
+
+   name: 'NameMC',
       url: 'https://namemc.com/profile/defaultpi',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
