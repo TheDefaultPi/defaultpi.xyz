@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-gray-400 text-sm">
-          &copy; 2025 DefaultPi. All rights reserved.
+          &copy; 2025 Shylr. All rights reserved.
         </p>
       </div>
     </footer>
